@@ -1,9 +1,9 @@
 <template>
   <div class="row intro-header">
-    <div class="container">
+    <div class="container-fluid row">
       <br>
 
-      <h3> Auction details </h3>
+      <h3 class="col"> Auction details </h3>
       <br>
       <div v-if="errorFlag" style="color: red;">
         {{error}}}
@@ -17,7 +17,9 @@
 
 
           <section class="auction-details row">
-            <div class="col-8">
+            <div class="col-sm-1 col-md-2">
+            </div>
+            <div class="col-sm-10 col-md-8">
               <div class="img-thumbnail"  >
                 <img v-bind:src= "imageUri" alt="Lights" style="width: 90%;height: 90%">
                 <div class="figure-caption">
@@ -28,16 +30,16 @@
 
                 </div>
 
-                <br/>
+
               </div>
-              <br/>
+
 
             </div>
-            <br/>
-            <br/>
-            <div id="bid_details" class="bid_details col-3">
-              <div id="bids" class="row" align="center">
 
+
+
+            <div id="bid_details" class="bid_details col-sm col-md">
+              <div id="bids" class="row" align="center">
                 <div class="col">
                   <pre >Last Bid:  {{amount}} </pre>
                 </div>
@@ -51,16 +53,13 @@
                   <pre >Buyer:  {{buyerUsername}} </pre>
                 </div>
                 <div class="col">
-                  <button type="button" class="btn bg-success" data-toggle="modal"  data-target="#makeBidModal">Make Bid</button>
+                  <button type="button" class="btn bg-success col" data-toggle="modal"  data-target="#makeBidModal">Make Bid</button>
                 </div>
               </div>
-
-
-
-
-
-
             </div>
+            <br/>
+            <br/>
+
           </section>
 
 
@@ -235,8 +234,8 @@
 
   .bid_details {
 
-    padding:5px;
-    margin:2px;
+    padding:5%;
+    margin:2%;
     background-color: #bbbbbb;
     width: 100%;
     height: 100%;

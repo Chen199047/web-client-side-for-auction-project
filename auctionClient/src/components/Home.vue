@@ -6,7 +6,7 @@
        <div class="col-3"></div>
        <input v-model="search" name = "search" id="search" class="form-control col-4" type="text" placeholder="Search">
 
-       <button class="btn btn-dark col-1" type="button" v-on:click="searchString()">Search</button>
+       <button class="btn btn-dark col-2" type="button" v-on:click="searchString()">Search</button>
      </form>
    </div>
     <br>

@@ -1,10 +1,12 @@
 <template>
+
   <div id="app" >
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <div id="logo">
       <img class='img-rounded' src="./assets/Logo.png" height="150" >
     </div>
 
-    <div class="nav-container">
+    <div class="nav-container container-fluid">
       <ul class="nav  row bg-dark">
         <li class="nav-item col">
           <img src="./assets/Logo2.png" height="50" align="right">
